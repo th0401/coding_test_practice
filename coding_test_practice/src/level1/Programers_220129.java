@@ -2,8 +2,10 @@ package level1;
 
 import java.util.Scanner;
 
+// 프로그래머스 : 코딩테스트 연습 level 1 약수의합
+// uri : https://programmers.co.kr/learn/courses/30/lessons/12928
 
-class Solution {
+class Solution1 {
 	public int solution(int n) {
 
 		// 정수n을 입력받아
@@ -39,7 +41,7 @@ class Solution {
 }
 
 
-public class Day1 {
+public class Programers_220129 {
 
 	public static void main(String[] args) {
 
@@ -50,11 +52,14 @@ public class Day1 {
 		int answer = 0;
 		int num = sc.nextInt();
 		
-		Solution solution = new Solution();
+		Solution1 solution = new Solution1();
 		
 		answer = solution.solution(num);
 		
-		System.out.println("답은 : " + answer);
+		if(answer != 0) { // 0이라면 잘못 입력한 경우임!
+			System.out.println("답은 : " + answer);
+		}
+		
 
 
 
